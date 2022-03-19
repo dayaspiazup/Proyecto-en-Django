@@ -1,0 +1,45 @@
+
+.header{
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;  
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    color: var(--font-color-reverse);
+    margin-left: 5px;
+}   
+    
+.logo img{
+    border-radius: 60%;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    padding: 0 20px;
+}
+/*! media querys */
+/* en dispositivos de 0a 760px se aplica estos */
+@media(max-width: 760px){
+ .navegacion{
+    flex-direction: column;
+    margin-top: 1px;
+ }    
+
+.menu{
+    flex-wrap: wrap; /*ocupe el ancho del viewp */
+    justify-content: center;
+    margin: 20px auto;
+}
+}
